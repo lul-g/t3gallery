@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <nav className="mb-4 flex w-full items-center justify-between border-b p-4 font-semibold">
       <div className="text-xl text-white">Gallery</div>
-      <button className="rounded-md border-2 border-white p-2 font-semibold text-white">
+      <button className="rounded-md border-2 border-white p-2 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:transition-all">
         Sign In
       </button>
     </nav>
