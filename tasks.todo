@@ -1,8 +1,8 @@
 TODO:
   ✔ Make it deploy @done (5/13/2024, 4:57:21 PM)
   ✔ mock data with ..meh.. UI @done (5/13/2024, 4:57:23 PM)
-  ☐ setup DB
-  ☐ attach DB to UI
+  ✔ setup DB @done (5/13/2024, 5:25:06 PM)
+  ✔ attach DB to UI @done (5/13/2024, 5:35:37 PM)
   ☐ add Auth
   ☐ add image upload Functionality
   ☐ error mangment
