@@ -1,0 +1,12 @@
+TODO:
+  ☐ Make it deploy
+  ☐ mock data with ..meh.. UI
+  ☐ setup DB
+  ☐ attach DB to UI
+  ☐ add Auth
+  ☐ add image upload Functionality
+  ☐ error mangment
+  ☐ ruting/image page (parallel route)
+  ☐ delete btn (w/ server actions)
+  ☐ analytics (posthog)
+  ☐ ratelimiting (upstash)
