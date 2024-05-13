@@ -1,6 +1,6 @@
 TODO:
-  ☐ Make it deploy
-  ☐ mock data with ..meh.. UI
+  ✔ Make it deploy @done (5/13/2024, 4:57:21 PM)
+  ✔ mock data with ..meh.. UI @done (5/13/2024, 4:57:23 PM)
   ☐ setup DB
   ☐ attach DB to UI
   ☐ add Auth
