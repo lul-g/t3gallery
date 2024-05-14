@@ -34,9 +34,12 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         <body>
-          <NavBar />
-          {modal}
-          {children}
+          <div>
+            <NavBar />
+            <main className="overflow-y-scroll">{children}</main>
+            {modal}
+          </div>
+          <div id="modal-root" />
         </body>
       </html>
     </ClerkProvider>
