@@ -4,7 +4,7 @@ TODO:
   ✔ setup DB @done (5/13/2024, 5:25:06 PM)
   ✔ attach DB to UI @done (5/13/2024, 5:35:37 PM)
   ✔ add Auth @done (5/13/2024, 6:38:07 PM)
-  ☐ add image upload Functionality
+  ✔ add image upload Functionality @done (5/13/2024, 7:11:08 PM)
   ☐ "taint" (server)
   ☐ error mangment
   ☐ ruting/image page (parallel route)

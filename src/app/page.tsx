@@ -1,13 +1,10 @@
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Link from "next/link";
-import { db } from "~/server/db";
+import { getMyImages } from "~/server/queries";
 
 export const dynamic = "force-dynamic";
 
 async function Images() {
-  const images = await db.query.images.findMany({
-    orderBy: (model, { desc }) => desc(model.id),
-  });
+  const images = await getMyImages();
   console.log(images);
   return (
     <div className="grid grid-cols-4 place-items-center gap-4">
