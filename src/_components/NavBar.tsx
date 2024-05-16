@@ -1,6 +1,7 @@
 "use client";
 import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import CustomUploadButton from "~/common/UploadButtonCustom";
 import { UploadButton } from "~/utils/uploadthing";
 
 export default function NavBar() {
@@ -13,12 +14,7 @@ export default function NavBar() {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <UploadButton
-            endpoint={"imageUploader"}
-            onClientUploadComplete={() => {
-              router.refresh();
-            }}
-          />
+          <CustomUploadButton />
           <UserButton />
         </SignedIn>
       </>
