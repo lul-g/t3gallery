@@ -9,7 +9,7 @@ TODO:
   ✔ Image Next.js @done (5/13/2024, 11:28:19 PM)
   ✔ error mangment (w/ sentry) @done (5/14/2024, 12:00:12 AM)
   ✔ roting/image page (parallel route) @done (5/14/2024, 2:03:29 PM)
-  ☐ image upload with notification
+  ✔ image upload with notification @done (5/16/2024, 11:03:26 AM)
   ☐ delete btn (w/ server actions)
   ☐ analytics (posthog)
   ☐ ratelimiting (upstash)
