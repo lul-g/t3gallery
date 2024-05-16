@@ -7,6 +7,7 @@ import "@uploadthing/react/styles.css";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { ourFileRouter } from "./api/uploadthing/core";
 import { extractRouterConfig } from "uploadthing/server";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata = {
   title: "T3 Gallery",
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable}`}>
+      <html lang="en" className={`${GeistSans.variable} dark`}>
         <NextSSRPlugin
           /**
            * The `extractRouterConfig` will extract **only** the route configs
@@ -38,6 +39,7 @@ export default function RootLayout({
             <NavBar />
             <main className="overflow-y-scroll">{children}</main>
             {modal}
+            <Toaster />
           </div>
           <div id="modal-root" />
         </body>
