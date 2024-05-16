@@ -141,6 +141,11 @@ export default function CustomUploadButton() {
       toast("😎 Upload Complete 🎉");
       router.refresh();
     },
+    onUploadError() {
+      toast.dismiss("upload-begin");
+      toast("😥 Oh no! Upload Failed❗");
+      router.refresh();
+    },
   });
   const router = useRouter();
   const posthog = usePostHog();
