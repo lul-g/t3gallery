@@ -1,6 +1,7 @@
 import { clerkClient } from "@clerk/nextjs/server";
+import { Button } from "~/components/ui/button";
 // import { Button } from "~/components/ui/button";
-import { getImage } from "~/server/queries";
+import { deleteImage, getImage } from "~/server/queries";
 
 export async function FullPageImageView(props: { photoId: string }) {
   const idAsNumber = Number(props.photoId);
@@ -28,7 +29,7 @@ export async function FullPageImageView(props: { photoId: string }) {
           <div>{image.createdAt.toLocaleDateString()}</div>
         </div>
 
-        {/* <div className="p-2">
+        <div className="p-2">
           <form
             action={async () => {
               "use server";
@@ -40,7 +41,7 @@ export async function FullPageImageView(props: { photoId: string }) {
               Delete
             </Button>
           </form>
-        </div> */}
+        </div>
       </div>
     </div>
   );
