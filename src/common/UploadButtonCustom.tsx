@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useUploadThing } from "~/utils/uploadthing";
 import { toast } from "sonner";
+import { usePostHog } from "posthog-js/react";
+import { PostHog } from "posthog-js";
 
 // inferred input off useUploadThing
 type Input = Parameters<typeof useUploadThing>;
@@ -141,6 +143,9 @@ export default function CustomUploadButton() {
     },
   });
   const router = useRouter();
+  const posthog = usePostHog();
+
+  posthog.capture("upload_begin");
   return (
     <>
       <label htmlFor="upload" className="cursor-pointer">
