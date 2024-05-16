@@ -10,6 +10,6 @@ TODO:
   ✔ error mangment (w/ sentry) @done (5/14/2024, 12:00:12 AM)
   ✔ roting/image page (parallel route) @done (5/14/2024, 2:03:29 PM)
   ✔ image upload with notification @done (5/16/2024, 11:03:26 AM)
-  ☐ delete btn (w/ server actions)
-  ☐ analytics (posthog)
+  ✔ delete btn (w/ server actions) @done (5/16/2024, 12:33:09 PM)
+  ✔ analytics (posthog) (client and server) @done (5/16/2024, 12:33:08 PM)
   ☐ ratelimiting (upstash)

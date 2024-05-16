@@ -1,4 +1,5 @@
 // server side
+import "server-only";
 import { PostHog } from "posthog-node";
 
 export function serverSideAnalytics() {
